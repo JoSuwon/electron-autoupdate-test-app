@@ -5,6 +5,11 @@ const {app, BrowserWindow, Menu} = require('electron');
 const log = require('electron-log');
 const {autoUpdater} = require("electron-updater");
 
+autoUpdater.setFeedURL({
+  provider: 'github',
+  owner: 'JoSuwon',
+});
+
 //-------------------------------------------------------------------
 // Logging
 //
